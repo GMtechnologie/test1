@@ -1,0 +1,69 @@
+/* En-tête */
+.entete {
+  background-color: #00274d; /* Couleur bleu foncé */
+  color: white;
+  display: flex; /* Flexbox pour aligner les éléments horizontalement */
+  justify-content: space-between; /* Sépare le texte et l'image */
+  align-items: center; /* Aligne verticalement */
+  padding: 30px;
+  top: 0; 
+}
+.image-droite {
+  height: 15%; /* Conserve les proportions de l'image */
+  margin: 0; /* Supprime les marges */
+  position: absolute; /* Positionne l'image par rapport au conteneur */
+  top: 0; /* Aligne en haut */
+  right: 0; /* Colle l'image au bord droit */
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 13px;
+  position: relative;
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 10px;
+  height: 2px;
+  background-color: #c50000;
+  transform: translateX(-50%);
+}
+
+h2 {
+  text-align: justify;
+  font-family: Arial;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 13px;
+  position: relative;
+  font-style: italic;
+}
+
+/* Tableau des produits */
+.tableau {
+  display: flex; /* Utilisation de Flexbox pour organiser les cellules */
+  flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+}
+
+.cellule {
+  width: 33%; /* Chaque cellule occupe 30% de la largeur */
+  height: auto; /* Ajuste automatiquement la hauteur */
+  text-align: center; /* Centre le contenu dans chaque cellule */
+  margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+.cellule img {
+  width: 90%; /* L'image occupe toute la largeur de la cellule */
+}
+
+.cellule p {
+  margin-top: 10px; /* Espacement au-dessus du texte */
+}
